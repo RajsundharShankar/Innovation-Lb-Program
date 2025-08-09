@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Product-1</li>
+        <li>product-2</li>
+    </ul>
+    <button id="addproduct">AddProduct</button>
+
+    <script>
+        const list = document.getElementById("list");
+        const addproduct = document.getElementById("addproduct");
+        let count = 3;
+        list.addEventListener('click',(event)=>{
+            if (event.traget.tagName==='LI'){
+                console.log(`You Clicked: $(event.target.textContent)`);
+            }
+        });
+
+        addprocuct.addEventListener('click',()=>{
+            const newproduct = document.createElement('li');
+            newproduct.textContent = `product:$(count++)`;
+            list.appendChild(newproduct);
+        });
+
+    </script>
+</body>
+</html>

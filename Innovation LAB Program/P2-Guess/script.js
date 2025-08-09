@@ -1,0 +1,11 @@
+let number = Math.floor(4,3);
+console.log("floor of 4,3=",number);
+let number1 = Math.floor(5-3);
+console.log("floor of -5=",number1);
+let number2 = Math.ceil(7.2);
+console.log("ceil of 7.2=",number2);
+let number3 = Math.round(6.5);
+console.log("round of 6.5=",number3);
+let RandomNumber = Math.random();
+console.log(RandomNumber);
+let randomnumber = Math.floor(Math.random()*100);
